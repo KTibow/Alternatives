@@ -1,0 +1,1987 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Migrating to Latest (1.19.2) - Alternatives</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#migrating-to-latest-1192" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Alternatives" class="md-header__button md-logo" aria-label="Alternatives" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Alternatives
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Migrating to Latest (1.19.2)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MicrocontrollersDev/Alternatives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Alternatives
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../1.8.9/5zig/" class="md-tabs__link">
+        1.8.9
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../1.12.2/feather_client/" class="md-tabs__link">
+        1.12.2
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../optifine/" class="md-tabs__link">
+        1.19.2
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../launcher/prism_win/" class="md-tabs__link">
+        Launcher
+      </a>
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Alternatives" class="md-nav__button md-logo" aria-label="Alternatives" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.png" alt="logo">
+
+    </a>
+    Alternatives
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MicrocontrollersDev/Alternatives" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Alternatives
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributors/" class="md-nav__link">
+        Contributors
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          1.8.9
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1.8.9" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1.8.9
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          Mods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mods" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Mods
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/5zig/" class="md-nav__link">
+        5zig
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/dsm.md" class="md-nav__link">
+        Danker's Skyblock Mod
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/dungeon_utilities/" class="md-nav__link">
+        Dungeon Utilities
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/hychat/" class="md-nav__link">
+        HyChat
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/skyblock_reinvented/" class="md-nav__link">
+        Skyblock Reinvented
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/skyblockcatia/" class="md-nav__link">
+        SkyblockCatia
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/skyblockextras/" class="md-nav__link">
+        SkyblockExtras
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/skypixel/" class="md-nav__link">
+        Skypixel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/wyvtils/" class="md-nav__link">
+        Wyvtils
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Clients
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Clients" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Clients
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/badlion_client/" class="md-nav__link">
+        Badlion Client
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/feather_client/" class="md-nav__link">
+        Feather Client
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/hyperium/" class="md-nav__link">
+        Hyperium
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/labymod/" class="md-nav__link">
+        LabyMod
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/lunar_client/" class="md-nav__link">
+        Lunar Client
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Modpacks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Modpacks" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Modpacks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.8.9/refraction_v4/" class="md-nav__link">
+        Refraction v4
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          1.12.2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1.12.2" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          1.12.2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_1">
+          Clients
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Clients" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Clients
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.12.2/feather_client/" class="md-nav__link">
+        Feather Client
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          1.19.2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="1.19.2" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          1.19.2
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_1">
+          Mods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Mods" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Mods
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optifine/" class="md-nav__link">
+        OptiFine
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2">
+          Clients
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Clients" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Clients
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feather_client/" class="md-nav__link">
+        Feather Client
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lunar_client/" class="md-nav__link">
+        Lunar Client
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Launcher
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Launcher" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Launcher
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1">
+          Prism Launcher
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Prism Launcher" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Prism Launcher
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../launcher/prism_win/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/MicrocontrollersDev/Alternatives/edit/main/docs/latest/migrating.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="migrating-to-latest-1192">Migrating to Latest (1.19.2)<a class="headerlink" href="#migrating-to-latest-1192" title="Permanent link">&para;</a></h1>
+<p>This is a comprehensive guide on how to download Fabric and mods for it. It also provides direct links to many mods that you may find useful.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>If you want more information on Fabric, why Forge/OptiFine are not recommended, or need help downloading Fabric and mods for it, click on the <code>Introduction</code> drop down below. If you are just here to see the mods list, continue to the next section.</p>
+<details class="note">
+<summary>Introduction</summary>
+<h3 id="the-situation">The Situation<a class="headerlink" href="#the-situation" title="Permanent link">&para;</a></h3>
+<p>So, you've been playing 1.8 for the past <a href="https://howoldisminecraft189.today">6.5 years</a> and are ready to see what 1.19 has to offer. Your first thought may be to download and install Forge and then add OptiFine as a mod, but this could not be further from the best choice. As Mojang has been rolling out releases, they've also been decreasing performance with every version, and neither Forge nor OptiFine are really able to bring back even a speck of that performance we see in 1.12 and below. However, another mod loader, Fabric, which is lightweight and easier to develop for, has created an amazing community in which many of its members focus on helping optimize the game to its greatest potential.</p>
+<h3 id="why-no-longer-optifine">Why no longer OptiFine?<a class="headerlink" href="#why-no-longer-optifine" title="Permanent link">&para;</a></h3>
+<p>OptiFine no longer provides the benefit that it once did on older versions of the game. As the years have gone by and Minecraft's code has changed, OptiFine has been continuing to completely overwrite major parts of Minecraft's code. Because OptiFine is closed source, it has become increasingly harder for modders to provide OptiFine compatibility. OptiFine also uses outdated formats for many of its features, including MCPatcher and its confusing and outdated settings menu. Many members in the Fabric community have taken it upon themselves to create better performance enhancing mods which surpass OptiFine, as well as provide alternatives to many of OptiFine's iconic features.</p>
+<p>While there is a Fabric compatibility layer for OptiFine known as OptiFabric, it is unsupported by many of the mods on the list, with some outright preventing the game from loading if OptiFabric is present. Therefore, consider all mods in this list to be incompatible with OptiFabric.</p>
+<h3 id="why-no-longer-forge">Why no longer Forge?<a class="headerlink" href="#why-no-longer-forge" title="Permanent link">&para;</a></h3>
+<p>Forge has always been less than ideal for performance due to its large overhead for server-sided modding, which is not necessary for users wishing for a vanilla compatible experience. Fabric on the other hand is extremely lightweight and is practically identical to vanilla. It's also considered to be much easier to make mods for and is being used as the stepping stone for <a href="https://quiltmc.org/faq">Quilt</a>, an in-progress mod loader which will provide many more benefits to modders and users alike.</p>
+<h3 id="installing-fabric">Installing Fabric<a class="headerlink" href="#installing-fabric" title="Permanent link">&para;</a></h3>
+<p>This is only for the default Minecraft launcher. If you are using <a href="https://prismlauncher.org">Prism Launcher</a>, you can easily create a new profile and install fabric to it. It is highly recommended to use Prism Launcher instead of the default launcher as it provides many more features for both modders and regular users alike.</p>
+<ol>
+<li>Make sure you close Minecraft and the Minecraft launcher before installing Fabric, otherwise unexpected things can happen.</li>
+<li>Download the <a href="https://fabricmc.net/use">Fabric installer</a>.<ul>
+<li>If you are on Windows, use either the <code>.JAR</code> version on the left or the <code>.EXE</code> version of the installer on the right.</li>
+<li>If you are on any other operating system or the <code>.EXE</code> version is not working for you, then use the <code>.JAR</code> version on the left.</li>
+</ul>
+</li>
+<li>Run the installer.<ul>
+<li>If you are using the <code>.EXE</code> version of the installer, simply double click the file. You may get a popup blocking you from running the installer and saying that "Windows protected your PC"; if so, click on <code>More info</code> and then <code>Run anyway</code>.</li>
+<li>If you are using the <code>.JAR</code> version, you will need to have Java installed on your device. If you have Java installed, double click the downloaded file to run the installer. If you don't, then follow these steps:<ol>
+<li>Go to the <a href="https://adoptium.net/?variant=openjdk17&amp;jvmVariant=hotspot">Java downloads page</a> and download the version of Java corresponding to your device.</li>
+<li>Run the Java installer by double clicking it.</li>
+<li>Do whatever the installer tells you to do.</li>
+<li>After installing Java, you should be able to run the Fabric installer by double clicking it. If you still can't for some reason, try running the program <a href="https://johann.loefflmann.net/downloads/jarfix.exe">Jarfix</a>.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Now that you have opened the installer, you will see two tabs at the top of the window: <code>Client</code> and <code>Server</code>. Make sure you are on the <code>Client</code> tab. Then, open the <code>Minecraft Version:</code> dropdown and select the version of Minecraft you want (most likely the latest version of Minecraft). The rest of the settings can be left with their defaults (unless you store your Minecraft version files in a different folder - if you want to use a different directory for this installation, that should be changed in the Minecraft launcher, not here). Click on <code>Install</code> when you are ready to install Fabric.</li>
+<li>Once Fabric is finished installing, open your Minecraft launcher and click on the profiles button at the bottom left corner. Select the Fabric profile, it should be called something like <code>fabric-loader-1.19.x</code>. Then hit <code>PLAY</code> to start playing!<ul>
+<li>If you do not see the profile, try exiting and reopening the Minecraft launcher. If this also does not work, go to the <code>Installations</code> tab in the Minecraft launcher and make sure the <code>Modded</code> option is ticked on the rop right corner. If it still does not show up, create your own installation by clicking the <code>New installation</code> button, and selecting your desired fabric version in the <code>Version</code> dropdown. Then press <code>Create</code> and launch this installation.</li>
+</ul>
+</li>
+</ol>
+<h3 id="downloading-mods-for-fabric">Downloading Mods for Fabric<a class="headerlink" href="#downloading-mods-for-fabric" title="Permanent link">&para;</a></h3>
+<p>This list currently consists of three different sources for mod downloads: Modrinth, GitHub, and CurseForge. This section will explain how to download mods from each of them.</p>
+<ul>
+<li>
+<p>Modrinth:</p>
+<ul>
+<li>On the mod's page, click on the <code>Versions</code> tab. From there, you can see all versions of the mod. Make sure you download the correct one based on the Minecraft version and mod loader, click on the download icon for the newest version of the mod that fits both previous criteria.</li>
+</ul>
+</li>
+<li>
+<p>GitHub:</p>
+<ul>
+<li>For your convenience, all GitHub links lead directly to the latest version of the mod. From here, click on the <code>Assets</code> drop down if needed, then download the jar that does not include <code>-sources</code> or <code>-dev</code> in the name.<ul>
+<li>If a link does not redirect you to the latest version but rather the main page, on the right side of the page, you should find a tag icon with the latest version. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>CurseForge:</p>
+<ul>
+<li>Click on the <code>Files</code> tab. Look for the versions of the mod with the Minecraft version you desire and is for the Fabric mod loader, and download the latest one. You can also press the <code>View All</code> button, then sort by mod loader or Minecraft version to make finding the correct jar easier.</li>
+</ul>
+</li>
+</ul>
+<p>If you are using Prism Launcher, you can simply go to the mods menu for your instance and press the "Download Mods" button in the top right to search Modrinth and CurseForge directly inside the launcher.</p>
+<p><strong>NOTE: SOME CURSEFORGE MODS MAY NOT ALLOW DOWNLOADS FROM THIRD PARTIES SUCH AS POLYMC</strong></p>
+<h3 id="installing-mods-on-fabric">Installing Mods on Fabric<a class="headerlink" href="#installing-mods-on-fabric" title="Permanent link">&para;</a></h3>
+<p>This is only for the default .minecraft directory. If you have made a custom directory, you likely do not need this guide.</p>
+<ol>
+<li>Make sure you close Minecraft before installing mods, otherwise unexpected things can happen.</li>
+<li>Open your Minecraft folder:<ul>
+<li>Windows: Hold the Windows key (<code>win</code>) and press <code>r</code> to open the Run program. Then type in <code>%appdata%/.minecraft</code> and hit enter.</li>
+<li>Mac: On the bar at the top of your screen in Finder, click <code>Go</code>, then click <code>Go to Folder</code> and type <code>~/Library/Application Support/Minecraft</code>, then hit enter.</li>
+<li>Linux: Open <code>~/.minecraft</code>.</li>
+</ul>
+</li>
+<li>In your Minecraft folder, open the folder called <code>mods</code>.<ul>
+<li>If this folder does not exist, create it.</li>
+</ul>
+</li>
+<li>Place all of the mods you want to use into this folder (note that all mods you install must support Fabric 1.19 or they will not work).</li>
+</ol>
+<h3 id="still-need-help">Still Need Help?<a class="headerlink" href="#still-need-help" title="Permanent link">&para;</a></h3>
+<p>Feel free to join my <a href="https://inv.wtf/micro">Discord server</a> for any help downloading Fabric, its mods, or general questions about them.</p>
+</details>
+<h2 id="mods">Mods<a class="headerlink" href="#mods" title="Permanent link">&para;</a></h2>
+<h3 id="necessary">NECESSARY<a class="headerlink" href="#necessary" title="Permanent link">&para;</a></h3>
+<p>As of 1.19, Mojang has added the ability to report chat messages. While on the surface this sounds great, these chat reports do not go to the server owners, but to a Mojang moderation team. This team will then decide your punishment, which is a temporary or permanent ban from all online servers and Realms. <strong>If you do not want to get banned from playing online, use this mod!</strong></p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/no-chat-reports">No Chat Reports</a></td>
+<td>Server side and client side mod. Prevents chat reporting from working if <code>enforce-secure-chat</code> is not enabled. Works best if installed on both sides but is not required.</td>
+<td><a href="https://github.com/Aizistral-Studios">Aizistral</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nodusclient/guardian/releases/latest">Guardian</a></td>
+<td>Prevents people from including context in chat reports against you. This can help prevent servers falsifying evidence against you. This will not protect against individual reports, be a good person and only use this to prevent unfair bans!</td>
+<td><a href="https://github.com/nodusclient">Nodus</a></td>
+</tr>
+</tbody>
+</table>
+<p>Are you a server owner using Bukkit, Spigot, Paper, or a similar plugin based server? Check out <a href="https://modrinth.com/plugin/freedomchat">Freedom Chat</a> by <a href="https://github.com/e-im">eim</a> for similar functionality to No Chat Reports!</p>
+<h3 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h3>
+<p>These are essential mods that are required for some fabric mods to work.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/fabric-api">Fabric API</a></td>
+<td>Required for most Fabric mods.</td>
+<td><a href="https://github.com/FabricMC">Fabric Team</a></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/fabric-language-kotlin">Fabric Language Kotlin</a></td>
+<td>Required for mods that use Kotlin.</td>
+<td><a href="https://github.com/FabricMC">Fabric Team</a></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/modmenu">Mod Menu</a></td>
+<td>Allows the user to see all installed mods in-game, as well as access the config for most.</td>
+<td><a href="https://github.com/TerraformersMC">Terraformers</a></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/architectury-api">Architectury</a></td>
+<td>Required for a few mods.</td>
+<td><a href="https://github.com/shedaniel">Shedaniel</a></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/cloth-config">Cloth Config</a></td>
+<td>Required for a few mods.</td>
+<td><a href="https://github.com/shedaniel">Shedaniel</a></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/malilib">MaLiLib</a></td>
+<td>Required for a few mods such as Litematica.</td>
+<td><a href="https://github.com/maruohon">Matti Ruohonen</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h3>
+<p>These are mods that are needed for playing the latest versions of Minecraft at a reasonable FPS. These will also help decrease frame times, hopefully eliminating spikes or stuttering.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+<th>Incompatibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/sodium">Sodium</a></td>
+<td>An all around performance mod, Sodium allows users to play the latest versions of Minecraft with high FPS, completely outperforming OptiFine, with some users seeing up to 8x their vanilla frames. Sodium also drastically improve visuals, providing a much better gameplay experience.</td>
+<td><a href="https://github.com/CaffeineMC">CaffeineMC</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://irisshaders.github.io">Iris</a></td>
+<td>A shader loader that allows users to load up their favorite OptiFine shaderpacks, but with much higher FPS. Iris also provides performance enhancements when not using shaders, making it great for all users.</td>
+<td><a href="https://github.com/IrisShaders">IrisShaders</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/indium">Indium</a></td>
+<td>Adds FRAPI support to Sodium, making it necessary to use for some of the mods on this list to work. This mod is merely temporary and will be removed once Sodium adds FRAPI/FREX support itself.</td>
+<td><a href="https://github.com/comp500">comp500</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/lithium">Lithium</a></td>
+<td>Helps improve the performance of many vanilla systems without changing their mechanics.</td>
+<td><a href="https://github.com/CaffeineMC">CaffeineMC</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.modrinth.com/mod/starlight">Starlight</a></td>
+<td>Rewrites the light engine to make loading chunks much quicker. Please note that this does not maintain full vanilla parity (this will not effect most casual players). If you want complete vanilla parity or if Starlight is causing stutters, please look at <a href="https://modrinth.com/mod/phosphor">Phosphor</a>.</td>
+<td><a href="https://github.com/Spottedleaf">SpottedLeaf</a></td>
+<td>Phosphor</td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/exordium">Exordium</a></td>
+<td>Caps the FPS of certain HUD elements that do not need to be updated every frame.</td>
+<td><a href="https://github.com/tr7zw">tr7zw</a></td>
+<td>(May break some HUD elements. Currently, the crosshair has no transparency.)</td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/lazydfu">LazyDFU</a></td>
+<td>Prevents the DataFixerUpper from doing anything until it is required, improving your Minecraft start times.</td>
+<td><a href="https://github.com/astei">astei</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/dashloader">DashLoader</a></td>
+<td>DashLoader caches all of Minecraft's contents to load the game much faster and provide insanely quick reloads.</td>
+<td><a href="https://github.com/alphaqu">alphaqu</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/ebe">Enhanced Block Entities</a></td>
+<td>Improves block entities by making them used baked models instead, allowing for better performance, visuals (via better smoothlighting), and better resource pack customizability.</td>
+<td><a href="https://github.com/FoundationGames">FoundationGames</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/ferrite-core/versions">FerriteCore</a></td>
+<td>Helps reduce the amount of memory the game takes up. This may make a big difference for larger modpacks as well.</td>
+<td><a href="https://github.com/malte0811">malte0811</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/entityculling">Entity Culling</a></td>
+<td>Culls entities that you cannot see, increasing FPS. While Sodium already does this, this mod is much more thorough in which entities can be culled.</td>
+<td><a href="https://github.com/tr7zw">tr7zw</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/moreculling">More Culling</a></td>
+<td>Cull's more block faces not already culled by Sodium. Can provide a massive performance boost when many of these blocks are in view.</td>
+<td><a href="https://github.com/fxmorin">fxmorin</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/immediatelyfast">ImmediatelyFast</a></td>
+<td>Improves the immediate mode rendering performance.</td>
+<td><a href="https://github.com/RaphiMC">RaphiMC</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/memoryleakfix">Memory Leak Fix</a></td>
+<td>Fixes multiple memory leaks found in the game to prevent excessive memory use.</td>
+<td><a href="https://github.com/fxmorin">fxmorin</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/dynamic-fps">Dynamic FPS</a></td>
+<td>Reduces your FPS when tabbed out of the game, therefore reducing your system load.</td>
+<td><a href="https://github.com/juliand665">juliand665</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/lazy-language-loader">Lazy Language Loader</a></td>
+<td>Improves loading times when changing your language in game by only reloading the required resources.</td>
+<td><a href="https://github.com/ChachyDev">chachy</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/sodium-extra">Sodium Extra</a></td>
+<td>Allows you to half the resolution on Apple's Retina displays and also adds most of OptiFine's performance features such as toggles for animations, particles, rain/snow, clouds, sky and biome colors, and more, as well as some custom ones.</td>
+<td><a href="https://github.com/FlashyReese">FlashyReese</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/recipe-cache">Recipe Cache</a></td>
+<td>Caches recipes to reduce lag when crafting or smelting many items.</td>
+<td><a href="https://gitlab.com/biom4st3r">biom4st3r</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/debugify">Debugify</a></td>
+<td>Fixes several bugs in Minecraft, including a few which can effect performance. This will fix lag spikes when crossing chunks and when clicking on links or the resource pack folder button, reduces time it takes to load into a world, and fixes entity collision checks being needlessly calculated client side.</td>
+<td><a href="https://github.com/isXander">isXander</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/audio-engine-tweaks">Audio Engine Tweaks</a></td>
+<td>Fixes the sound pool overloading, allowing for sounds to continue playing at all time and without log spam.</td>
+<td><a href="https://github.com/mattymatty97">mattymatty97</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="other-performance-mods">Other Performance Mods<a class="headerlink" href="#other-performance-mods" title="Permanent link">&para;</a></h3>
+<p>These are other performance mods that one may prefer to use, but are not required. It is neither recommended or unrecommended, and is up to the player to decide given their use-case.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+<th>Incompatibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/phosphor">Phosphor</a></td>
+<td>Phosphor is similar to Starlight in that they both speed up the light engine. However, Phosphor ensures full vanilla parity as compared to Starlight, which may break things such as light suppression. Use Phosphor instead of Starlight if you are looking for vanilla parity at the expense of being slightly slower. Starlight may also cause stuttering on some machines, in which case you should use Phosphor instead.</td>
+<td><a href="https://github.com/CaffeineMC">CaffeineMC</a></td>
+<td>Starlight</td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/skip-transitions">Skip Transitions (No 1.19 Yet)</a></td>
+<td>Removes transitions such as the fading animation that Mojang added between their splash screens. This may provide a smoother experience if the fade is choppy on a low end machine or allow people to access certain menus quicker if they do not like the small wait time.</td>
+<td><a href="https://github.com/trufflezmc">TrufflezMC</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/krypton">Krypton</a></td>
+<td>This mod is bannable on Hypixel and most likely other servers. Although it is probably not detectable, it is still against Hypixel's rules and the mod developer does not recommend using it on Hypixel. However, this mod works great for private servers. Krypton optimizes network stacking and entity tracking, as well as other micro-optimizations.</td>
+<td><a href="https://github.com/astei">astei</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="recommended">Recommended<a class="headerlink" href="#recommended" title="Permanent link">&para;</a></h3>
+<p>These are mods that I personally recommend due to their usefulness. While they may not boost performance, they are mostly quality of life mods meant to better your experience.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+<th>Incompatibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/item-model-fix">Item Model Fix</a></td>
+<td>Fixes the gaps you see on items when holding them. This makes for a much more pleasant experience for most resourcepacks, including both defaults.</td>
+<td><a href="https://github.com/PepperCode1">Pepper_Bell</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/borderless-mining">Borderless Mining</a></td>
+<td>Borderless Fullscreen for Minecraft. This makes the game not minimize when you tab out.</td>
+<td><a href="https://github.com/comp500">comp500</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/recursiveresources">Recursive Reources</a></td>
+<td>Resource Pack Organizer but ported to Fabric and with more features. It allows you to sort resource packs into folders, as well as search for them using a search bar. It also lets you change how resourcepacks are ordered.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/smooth-scrolling-everywhere-fabric">Smooth Scrolling Everywhere</a></td>
+<td>Makes the scrolling in all menus smoother. (MAY HAVE A PROBLEM WITH CONFIG RESETS)</td>
+<td><a href="https://github.com/shedaniel">Shedaniel</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/controlling">Controlling</a></td>
+<td>Completely revamps Minecraft's controls menu, making it much easier to navigate and change keys, letting you search and more easily find conflicting keybinds.</td>
+<td><a href="https://github.com/jaredlll08">Jaredllll08</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.modrinth.com/mod/brb">Better Recipe Book</a></td>
+<td>Brings many QOL improvements to the current recipe book, making it much more useful for different scenarios.</td>
+<td><a href="https://github.com/mrshmllow">marshmallow</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/inspecio">Inspecio</a></td>
+<td>Adds more information to tooltips for many items in the game, including shulker boxes. It is very customizable with a large set of config options.</td>
+<td><a href="https://github.com/Queerbric">Queerbic</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/compactchat">CompactChat</a></td>
+<td>Compacts duplicate chat messages to help clean your chat. It also lets you increase your chat history length.</td>
+<td><a href="https://github.com/cbyrneee">cbyrne</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/gamma-utils">Gamma Utils</a></td>
+<td>Fully configurable gamma utility mod. Fullbright but for Fabric.</td>
+<td><a href="https://github.com/Sjouwer">Sjouwer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/mixintrace">MixinTrace</a></td>
+<td>Makes it easier for mod developers to debug crash reports.</td>
+<td><a href="https://github.com/comp500">comp500</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="other-cool-mods">Other Cool Mods<a class="headerlink" href="#other-cool-mods" title="Permanent link">&para;</a></h3>
+<p>These are mods that are more dependant on personal preference than importance.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+<th>Incompatibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/cosmetica">Cosmetica</a></td>
+<td>Adds cosmetics to your game completely for free! Also supports showing cosmetics from other clients and mods!</td>
+<td><a href="https://github.com/Cosmetica-cc">Cosmetica-cc</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/3dskinlayers">3D Skin Layers</a></td>
+<td>Makes the outer layer of skins 3D. Very customizable and lets you adjust distance that 3D renders for performance.</td>
+<td><a href="https://github.com/tr7zw">tr7zw</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/easeify">Easeify</a></td>
+<td>Easeify is a QOL mod with many features. Check out the projects README for more information.</td>
+<td><a href="https://github.com/Polyfrost">Polyfrost</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/midnightcontrols">Midnight Controls</a></td>
+<td>Allows you to easily play Minecraft with a controller.</td>
+<td><a href="https://github.com/TeamMidnightDust/MidnightControls">TeamMidnightDust</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/cleanview-fabric">CleanView</a></td>
+<td>Prevents self particles from appearing on your screen.</td>
+<td><a href="https://github.com/zlainsama">LianMI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/color-me-outlines">Color Me Outlines</a></td>
+<td>Color Me Outlines is a close equivalent to 1.8's block overlay, allowing you to customize the outline when looking at blocks.</td>
+<td><a href="https://github.com/LordDeatHunter">LordDeatHunter</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/hitboxplus">HitBox+</a></td>
+<td>HitBox+ allows you to customize hitboxes, similar to 1.8 mods and clients.</td>
+<td><a href="https://github.com/PingIsFun">PingIsFun</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/slight-gui-modifications">Slight GUI Modifications</a></td>
+<td>Adds animations to many GUI elements.</td>
+<td><a href="https://github.com/shedaniel">Shedaniel</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/colored-lights">Colored Lights (No 1.19 Yet)</a></td>
+<td>Adds colored lighting to Minecraft with its colors completely customizable via resource pack.</td>
+<td><a href="https://github.com/Gegy">Gegy</a></td>
+<td>Sodium</td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/blur-fabric">Blur</a></td>
+<td>Creates a nice blur effect when in menus and is completely customizable.</td>
+<td><a href="https://github.com/Motschen">Motschen</a></td>
+<td>Rainbowify</td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/rainbowify">Rainbowify</a></td>
+<td>Replaces the dark GUI backgrounds with a smooth rainbow one.</td>
+<td><a href="https://github.com/officialLennox">Lennox</a></td>
+<td>Blur</td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/wavey-capes">WaveyCapes</a></td>
+<td>Breaks your cape into smaller sections to make its movement more fluid. Looks great with the new migration capes.</td>
+<td><a href="https://github.com/tr7zw">tr7zw</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/perspektive">Perspektive</a></td>
+<td>A simple 360 degrees perspective mod that lets you move the camera without moving your player's direction.</td>
+<td><a href="https://github.com/r0yzer">r0yzer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/evergreenhud">EvergreenHUD (No 1.19 Yet)</a></td>
+<td>Adds many useful HUD elements to your screen with an easy to use in game config.</td>
+<td><a href="https://github.com/isXander">isXander</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/betterf3">BetterF3</a></td>
+<td>Replaces Minecraft's original debug HUD with a highly customizable, more human-readable HUD. You can customize colors, position, add spacings, and more.</td>
+<td><a href="https://github.com/cominixo">cominixo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/tnttime">TNTTime (No 1.19 Yet)</a></td>
+<td>Displays time left to the TNT explosion above primed TNT.</td>
+<td><a href="https://github.com/shateq">Simon</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/advancementinfo">Advancement Info</a></td>
+<td>Makes the advancement menu fit your entire screen, which could make it easier to navigate the menu.</td>
+<td><a href="https://github.com/gbl">Giselbaer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/appleskin/">AppleSkin</a></td>
+<td>Lets you know how much a food will restore your hunger bar.</td>
+<td><a href="https://github.com/squeek502">Ryan Liptak</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/d4rkm0nkey/HorseStatsVanilla/releases/latest">Horse Stats Vanilla</a></td>
+<td>Adds the stats of your horse in your horse/donkey inventory HUD, making it easy to see the perks of your horses and donkeys.</td>
+<td><a href="https://github.com/d4rkm0nkey">d4m0n</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/better-mount-hud">Better Mount HUD</a></td>
+<td>Makes some important HUD modules visible when riding a mount.</td>
+<td><a href="https://www.curseforge.com/members/lortseam_/projects">Lortseam_</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/cleardespawn">Clear Despawn</a></td>
+<td>Clear Despawn makes it more obvious on which items are about to despawn by making them blink exponentially faster after a certain time.</td>
+<td><a href="https://github.com/StrikerRockers-Mods">StrikerRockers</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/litematica">Litematica</a></td>
+<td>A schematic mod that allows you to import schematics of builds.</td>
+<td><a href="https://github.com/maruohon">Matti Ruohonen</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/minihud">MiniHUD</a></td>
+<td>A customizable HUD that allows displaying various information on your screen as well as beneficial overlay renders.</td>
+<td><a href="https://github.com/maruohon">Matti Ruohonen</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/clear-skies">Clear Skies</a></td>
+<td>Removes fog color banding on skybox.</td>
+<td><a href="https://github.com/grondag">grondag</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/extended-clouds">Extended Clouds</a></td>
+<td>Changes cloud render distance to be same as your set render distance.</td>
+<td><a href="https://github.com/alphaqu">alphaqu</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/sound-physics-remastered">Sound Physics Remastered</a></td>
+<td>Makes sounds much more realistic, adding reverb, attenuation, and absorption.</td>
+<td><a href="https://github.com/vlad2305m">vlad2305m</a>, <a href="https://github.com/thedocruby">thedocruby</a> &amp; <a href="https://github.com/henkelmax">henkelmax</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.curseforge.com/minecraft/mc-mods/universalchat">Universal Chat</a></td>
+<td>Translates chat messages to different languages.</td>
+<td><a href="https://github.com/mineblock11">mineblock11</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/screencapper">Screencapper</a></td>
+<td>Improves the way you share and view screenshots.</td>
+<td><a href="https://github.com/Deftu">Deftu</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/better-taskbar">Better TaskBar</a> <strong>Windows Only</strong></td>
+<td>Small mod that applies the windows progress animation to the Minecraft icon in the taskbar whenever loading resources or a world.</td>
+<td><a href="https://github.com/MORIMORI0317">MORIMORI0317</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="optifine-replacements">OptiFine Replacements<a class="headerlink" href="#optifine-replacements" title="Permanent link">&para;</a></h3>
+<p>As OptiFine is no longer recommended, here are some replacements for many of it's features. Please note that some mods that have been listed in the above categories may be repeated here.</p>
+<h4 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h4>
+<p>Features that OptiFine provides that are not resource pack related.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+<th>Incompatibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/zoomify">Zoomify</a></td>
+<td>Zoom. More customizable than OptiFine's.</td>
+<td><a href="https://github.com/isXander">isXander</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/bobby">Bobby</a></td>
+<td>Higher render distances. More customizable than OptiFine's.</td>
+<td><a href="https://github.com/Johni0702">Johni0702</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/lambdynamiclights">LambDynamicLights</a></td>
+<td>Dynamic lights. More customizable than OptiFine.</td>
+<td><a href="https://github.com/LambdAurora">LambdAurora</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/lambdabettergrass">LambdaBetterGrass</a></td>
+<td>Better grass and better snow. More customizable than OptiFine.</td>
+<td><a href="https://github.com/LambdAurora">LambdAurora</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/cull-less-leaves">Cull Less Leaves</a></td>
+<td>Smart leaves.</td>
+<td><a href="https://github.com/isXander">isXander</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/fabrishot">Fabrishot</a></td>
+<td>Higher resolution Screenshots. More customizable than OptiFine.</td>
+<td><a href="https://modrinth.com/user/z0r5biKh">ramidzkh</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="resource-packs">Resource Packs<a class="headerlink" href="#resource-packs" title="Permanent link">&para;</a></h4>
+<p>Resource pack features that OptiFine has. Not all support the OptiFine format.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+<th>Incompatibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/custom-splash-screen">Custom Splash Screen (No 1.19 Yet)</a></td>
+<td>Custom loading screen colors. Does not support OptiFine format.</td>
+<td><a href="https://github.com/TeamMidnightDust">MidnightDust</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/fabricskyboxes">FabricSkyboxes</a></td>
+<td>Custom sky. Does not support OptiFine format.</td>
+<td><a href="https://modrinth.com/user/ifLBWnLs">AMereBagatelle</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/continuity">Continuity</a></td>
+<td>Connected texture models (CTM) and emmisive textures. Supports OptiFine format.</td>
+<td><a href="https://github.com/PepperCode1">Pepper_Bell</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/animatica">Animatica</a></td>
+<td>Animated textures. Supports OptiFine format.</td>
+<td><a href="https://github.com/FoundationGames">FoundationGames</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/optigui">OptiGUI</a></td>
+<td>GUI/Container textures. Supports OptiFine format.</td>
+<td><a href="https://github.com/opekope2">opekope2</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/semitranslucency">Semitranslucency Fix</a></td>
+<td>Fixes semitranslucent textures. Honestly have no clue if OptiFine does this but it probably does idk.</td>
+<td><a href="https://github.com/ruvaldak">ruvaldk</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/cit-resewn">CIT Resewn</a></td>
+<td>Custom item textures. Supports OptiFine format.</td>
+<td><a href="https://github.com/SHsuperCM">SHsuperCM</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kvverti/colormatic/releases/latest">Colormatic</a></td>
+<td>Custom colors. Does not support OptiFine format.</td>
+<td><a href="https://github.com/kvverti">Thalia</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/YoungSoulluoS/cemFork/releases/latest">Custom Entity Models (Fork)</a></td>
+<td>Custom entity models. Supports OptiFine format.</td>
+<td><a href="https://github.com/dorianpb">dorianpb</a> &amp; <a href="https://github.com/YoungSoulluoS">YoungSoulluoS</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/entitytexturefeatures">Entity Texture Features</a></td>
+<td>Random and emissive entity textures. Supports OptiFine format.</td>
+<td><a href="https://github.com/btrab1">Traben</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/jsonem">JsonEM</a></td>
+<td>Custom JSON Entity Models. Does not support OptiFine format.</td>
+<td><a href="https://github.com/FoundationGames">FoundationGames</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/puzzle">Puzzle</a></td>
+<td>Adds custom splash screens, better logo blending, unlimited model rotations, and bigger custom models. Incorporates a platform to configure OptiFine replacements from other mods. Supports OptiFine format.</td>
+<td><a href="https://github.com/PuzzleMC">PuzzleMC</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://modrinth.com/mod/mcpppp">MCPatcherPatcher++</a></td>
+<td>Converts from OptiFine format to newer formats.</td>
+<td><a href="https://github.com/supsm">supsm</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-shader">Internal Shader<a class="headerlink" href="#internal-shader" title="Permanent link">&para;</a></h3>
+<p>If you are one of those weirdos who uses internal shaders (you shouldn't btw), here's a mod that does the same thing.</p>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Description</th>
+<th>Author</th>
+<th>Incompatibilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://modrinth.com/mod/simply-no-shading">Simply No Shading</a></td>
+<td>Internal Shaders</td>
+<td><a href="https://github.com/StartsMercury">StartsMercury</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="unrecommended-mods">Unrecommended Mods<a class="headerlink" href="#unrecommended-mods" title="Permanent link">&para;</a></h3>
+<p>These are mods that are too experimental or unstable that I do not recommend using unless you know what you are doing. Please note that some of these mods will continue to be improved upon over time and may eventually be added to the above lists.</p>
+<h4 id="may-eventually-be-supported">May Eventually Be Supported<a class="headerlink" href="#may-eventually-be-supported" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Reasoning</th>
+<th>Author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C2ME</td>
+<td>C2ME is an experimental mod that attempts to multithread chunk generation, I/O, and loading. It is deemed not production ready by the authors and may corrupt worlds or cause other issues. It also comes with its own list of incompatible mods. If you decide to use it, remember to make backups.</td>
+<td><a href="https://github.com/RelativityMC">RelativityMC</a></td>
+</tr>
+<tr>
+<td>VMP (Very Many Players)</td>
+<td>VMP attempts to alleviate the strain on servers when there are a large amount of players. It is still in early development and may cause issues according to the authors, who also made C2ME. If you decide to use it, remember to make backups.</td>
+<td><a href="https://github.com/RelativityMC">RelativityMC</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="will-never-be-supported">Will Never Be Supported<a class="headerlink" href="#will-never-be-supported" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Mod</th>
+<th>Reasoning</th>
+<th>Author</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Not Enough Crashes</td>
+<td>NEC regularly causes the game to be in an invalid state and blames the wrong mods for crashes, making it harder for mod devs to debug.</td>
+<td><a href="https://github.com/natanfudge">natanfudge</a></td>
+</tr>
+<tr>
+<td>Better Beds</td>
+<td>BetterBeds has been replaced by Enhanced Block Entities.</td>
+<td><a href="https://github.com/Motschen">Motschen</a></td>
+</tr>
+<tr>
+<td>Iris Starline</td>
+<td>The Iris Starline fork was meant to provide a shaders option menu before Iris created their own much improved version. This fork serves no purpose to users.</td>
+<td><a href="https://github.com/HyperCubeMC">HyperCubeMC</a></td>
+</tr>
+<tr>
+<td>Smooth Boot</td>
+<td>While Smooth Boot does great at decreasing startup time, it is no match for LazyDFU and DashLoader. Smooth Boot will also cause a decrease in performance for several minutes after startup according to some reports.</td>
+<td><a href="https://github.com/UltimateBoomer">UltimateBoomer</a></td>
+</tr>
+<tr>
+<td>FastOpenLinksAndFolders</td>
+<td>Superseded by Debugify.</td>
+<td><a href="https://github.com/altrisi">Altrisi</a></td>
+</tr>
+<tr>
+<td>ForgetMeChunk</td>
+<td>Superseded by Debugify.</td>
+<td><a href="https://github.com/mjwells2002">Breadloaf</a></td>
+</tr>
+<tr>
+<td>ToolTipFix</td>
+<td>Superseded by Debugify.</td>
+<td><a href="https://github.com/kyrptonaught">kyrptonaught</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h1>
+<p>Join my <a href="https://inv.wtf/micro">Discord server</a> for news regarding the development of this repository!</p>
+<p>If you would like to contribute, please make a PR.<br />
+Some notes:
+- Leave your name and GitHub link in the contributors credits section in alphabetical order, even for a tiny change
+- Please try to use Modrinth or GitHub over CurseForge when possible (Modrinth is the preferred platform)
+- Please use a GitHub link instead of a Modrinth/CurseForge link for Author credit when possible
+    - If the GitHub profile is an organization, use that instead of one of the owners / person credited on Modrinth/CurseForge
+- Make sure that the option to allow me to make changes to your PR is enabled</p>
+<h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://github.com/BobIsMyManager">BobIsMyManager</a></li>
+<li><a href="https://github.com/glaicodes">glai</a></li>
+<li><a href="https://github.com/karmette">karmette</a></li>
+<li><a href="https://github.com/Mqisty">Moisty</a></li>
+<li><a href="https://github.com/nacrt">nacrt</a></li>
+<li><a href="https://github.com/NoPro2024">NoPro2024</a></li>
+<li><a href="https://github.com/osfanbuff63">osfanbuff</a></li>
+<li><a href="https://github.com/Lisenaaaa">Lisena</a></li>
+<li><a href="https://github.com/Lulonaut">Lulonaut</a></li>
+<li><a href="https://github.com/voxxal">voxxal</a></li>
+<li><a href="https://github.com/Wyvest">Wyvest</a></li>
+</ul>
+<p>And a special thanks to <a href="https://github.com/LambdAurora">LambdAurora</a> for her own <a href="https://lambdaurora.dev/optifine_alternatives/">OptiFine Alternatives</a> gist that first helped me start using Fabric and helped with inspiration and mod finding for this list.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2022 MicrocontrollersDev
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/MicrocontrollersDev/Alternatives" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://inv.wtf/micro" target="_blank" rel="noopener" title="inv.wtf" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "toc.integrate", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
