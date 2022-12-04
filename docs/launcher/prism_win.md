@@ -1,25 +1,20 @@
-# Prism Launcher
+# Migrating from SkyClient in the official launcher to Prism
 
-Recently, the default Minecraft launcher has been having a lot of issues. Almost every week it feels like Mojang manages to break something that causes many people to not be able to play the game. Being a modded version of an already old Minecraft version, I am not too hopeful that many of these issues will ever be fixed or will be fixed anytime soon. For this reason, its recommended to switch to a launcher that cares about modding and old versions of Minecraft, and whose devs we can easily reach out to to report any major issues.
+Recently, the default Minecraft launcher has been having a lot of issues. Almost every week it feels like Mojang manages to break something. Since SkyClient is a modded version of an already old version, Mojang probably won't care, so it's recommended to switch to Prism Launcher since the devs care about modding and old versions of Minecraft.
 
-## How to Install (Windows)
+Note: Despite this guide looking long, this is a simple process and will only take a few minutes.
 
-- This guide will only be for windows for now. Despite looking long, this is a very simple process and should only take a few minutes! This guide will also assume you are migrating from Skyclient, but steps will be largely the same, except for the migrating data section.
+## 1: Install Java
 
-### Step 1 - Installing Java
+In order to launch SkyClient you need Java. Unlike the default Minecraft launcher, Prism does not come bundled with Java, so we must install it ourselves. We'll be downloading Java from [Adoptium](https://adoptium.net/temurin/releases/) (an open source JRE made by a reputable source).
 
-First, we need to download and setup Java to be able to use Prism Launcher. Unlike the default Minecraft launcher, Prism does not come bundled with a default Java, and so we must install it ourselves.
-
-Minecraft 1.16 and below all use Java 8, while 1.17 and above use Java 17. I recommend installing both to make it simpler to use different versions of Minecraft whenever you want.
-
-In order to download Java, we will first head to the [Adoptium download page](https://adoptium.net/temurin/releases/). Adoptium is an open source Java that does not require a paid account to install, and is made by the Eclipse Foundation, a very reputable source. To install, we will use the dropdown boxes to make it easier to find the versions of Java we need
-
+Filter the dropdown boxes with these options:
 - Operating System: Windows
 - Architecture: x64
 - Package Type: JRE
-- Version: 8 or 18 (download one of them, then download the other after)
+- Version: 8 or 18 (it's a good idea to get both so you can use new and old versions of Minecraft; download one of them, then download the other after)
 
-Once we have chosen our download preferences, we will click the `.msi` download option. Once it's downloaded, run it and follow the installation process. Do this for both versions of Java.
+For each version of Java, download and run the `.msi` option, and go through the installation process.
 
 ### Step 2 - Installing Prism
 
